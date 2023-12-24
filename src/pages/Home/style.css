@@ -1,0 +1,59 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.sub-title {
+  font: 700 1rem/1.1 "Poppins", sans-serif;
+  color: var(--g3);
+  text-align: start;
+  margin-bottom: 12px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.search-btn {
+  border: 1px solid var(--p3);
+  padding: 20px;
+  max-width: 320px;
+  border-radius: 20px;
+}
+
+.home input {
+  height: 56px;
+  width: 70%;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--g9);
+  color: var(--g1);
+  font: 400 1rem/1.1 "Roboto", sans-serif;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.home input::placeholder {
+  color: var(--g3);
+  font: 400 1rem/1.1 "Roboto", sans-serif;
+}
+
+.list-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.recently-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+
+
+
+

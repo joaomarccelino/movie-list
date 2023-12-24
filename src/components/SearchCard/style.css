@@ -1,0 +1,35 @@
+.search-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-card img {
+  width: 80px;
+  border-radius: 12px;
+}
+
+.search-movie-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.search-movie-info h3{
+  font: 700 1rem/1.1 "Poppins", sans-serif;
+  color: var(--g3);
+}
+
+.search-movie-info p {
+  font: 400 0.75rem/1.1 "Roboto", sans-serif;
+  color: var(--g5);
+}
+
+@media (max-width: 600px) {
+  .search-card {
+    gap: 10px
+  }  
+  .search-movie-info {
+    gap: 10px;
+  }
+}

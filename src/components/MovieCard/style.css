@@ -1,0 +1,35 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  min-width: 200px;
+  max-height: 340px;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.movie-card img {
+  border-radius: 8px;
+}
+
+.movie-card h2 {
+  font: 700 1rem/1.1 "Poppins", sans-serif;
+  color: var(--g1);
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
+
+.movie-card p {
+  font: 400 0.75rem/1.1 "Poppins", sans-serif;
+  color: var(--g4);
+}
+
+@media (max-width: 600px) {
+  .movie-card h2{
+    font-size: 0.75rem;
+  }
+
+  .movie-card p {
+    font-size: 0.625rem;
+  }
+}

@@ -1,0 +1,30 @@
+.list-card {
+  position: relative;
+  max-width: 160px;
+  max-height: 160px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.list-card img {
+  filter: brightness(15%);
+}
+
+.card-content {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+}
+
+.list-title {
+  font: 700 1rem/1.1 "Poppins", sans-serif;
+  color: var(--g3);
+}
+
+.list-quantity {
+  font: 400 0.75rem/1.1 "Roboto", sans-serif;
+  color: var(--g4);
+}

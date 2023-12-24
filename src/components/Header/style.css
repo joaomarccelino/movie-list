@@ -1,0 +1,6 @@
+.header h1 {
+  font: 700 2rem/1.1 "Poppins", sans-serif;
+  color: var(--g1);
+  text-align: center;
+  padding: 20px;
+}
