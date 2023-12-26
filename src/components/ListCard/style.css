@@ -12,6 +12,10 @@
   filter: brightness(15%);
 }
 
+.list-card img:hover {
+  filter: brightness(30%);
+}
+
 .card-content {
   position: absolute;
   top: 20px;

@@ -11,9 +11,9 @@ const tmdbService = axios.create({
   },
 });
 
-export const getMovieById = async (movieId: string) => {
+export const getMovieById = async (mediaType: string, movieId: string) => {
   try {
-    const response = await tmdbService.get(`/movie/${movieId}`);
+    const response = await tmdbService.get(`/${mediaType}/${movieId}`);
     return response.data;
   } catch (error) {
     console.error(`Error fetching movie details for ID ${movieId}:`, error);

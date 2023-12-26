@@ -31,7 +31,7 @@ const SearchResults = () => {
     handleSearch();
   }, [query]);
   return (
-    <div className="search-results-main">
+    <div className="search-results-main container">
       <Header />
       <SearchComponent onSearch={setQuery} />
       <div className="search-results">
