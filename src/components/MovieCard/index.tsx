@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 
 interface MovieCardProps {
-  id: string;
+  id?: string;
   original_title?: string;
   overview?: string;
   release_date?: string;

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import tmdbService from "../../services/moviedb";
 import SearchComponent from "../../components/SearchInput";
-import Header from "../../components/Header";
 import SearchCard from "../../components/SearchCard";
 import './style.css';
 
@@ -32,7 +31,6 @@ const SearchResults = () => {
   }, [query]);
   return (
     <div className="search-results-main container">
-      <Header />
       <SearchComponent onSearch={setQuery} />
       <div className="search-results">
         {searchData?.map((result: any) => (

@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { handleGetAllMovies } from "../../services/lists";
-import MovieCard from "../../components/MovieCard";
-import Header from "../../components/Header";
+import MovieListCard from "../../components/MovieListCard";
+import './style.css';
 
 const MoviesList = () => {
   const { isLoading, error, data: movies } = useQuery(['movie-list-movies'],
@@ -17,12 +17,12 @@ const MoviesList = () => {
 
   return (
     <>
-      <Header />
       <main className="container">
-        <div className="recently-section">
+        <h1 className="movies-list-title">FILMES</h1>
+        <div className="movies-list">
           {
             movies?.map((movie, index) => (
-              <MovieCard {...movie} key={index} />
+              <MovieListCard {...movie} key={index} />
             ))
           }
         </div>

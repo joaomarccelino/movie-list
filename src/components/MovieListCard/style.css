@@ -1,0 +1,77 @@
+.movie-list-card {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 32px;
+  gap: 30px;
+  align-items: center;
+}
+
+.movie-list-card img {
+  border-radius: 8px;
+  max-width: 100px;
+}
+
+.movie-list-card-info {
+  width: 200px;
+}
+
+.movie-list-card h2 {
+  font: 700 1rem/1.1 "Poppins", sans-serif;
+  color: var(--g1);
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
+
+.movie-list-card p {
+  font: 400 0.75rem/1.1 "Poppins", sans-serif;
+  color: var(--g4);
+}
+
+.list-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.list-actions-button {
+  background: none;
+  text-transform: uppercase;
+  font: 700 0.75rem/1.1 "Poppins", sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.watched-button {
+  border: 1px solid var(--p3);
+  color: var(--p3);  
+}
+
+.remove-button {
+  border: 1px solid red;
+  color: red; 
+}
+
+@media (max-width: 600px) {
+  .movie-list-card {
+    gap: 15px;
+  }
+  .movie-list-card h2{
+    font-size: 0.75rem;
+  }
+
+  .movie-list-card p {
+    font-size: 0.625rem;
+  }
+
+  .movie-list-card-info {
+    width: 100px;
+  }
+  .list-actions-button {
+    font-size: 0.625rem;
+  }
+}

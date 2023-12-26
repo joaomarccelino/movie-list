@@ -6,6 +6,7 @@ import SearchResults from './pages/SearchResults'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import MoviesList from './pages/MoviesList'
 import SeriesList from './pages/SeriesList'
+import Header from './components/Header'
 
 const queryClient = new QueryClient();
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:media/:id" element={<MovieDetails />} />

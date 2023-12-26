@@ -1,7 +1,6 @@
 import { useQuery } from "react-query";
 import { handleGetAllSeries } from "../../services/lists";
-import MovieCard from "../../components/MovieCard";
-import Header from "../../components/Header";
+import MovieListCard from "../../components/MovieListCard";
 
 const SeriesList = () => {
   const { isLoading, error, data: series } = useQuery(['movie-list-series'],
@@ -17,12 +16,12 @@ const SeriesList = () => {
 
   return (
     <>
-      <Header />
       <main className="container">
-        <div className="recently-section">
+        <h1 className="movies-list-title">SÉRIES</h1>
+        <div className="series-list">
           {
             series?.map((movie, index) => (
-              <MovieCard {...movie} key={index} />
+              <MovieListCard {...movie} key={index} />
             ))
           }
         </div>
